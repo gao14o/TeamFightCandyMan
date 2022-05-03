@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <CscToolPath>E:\for game design\2020.3.27f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{47BF7D66-EBA1-572E-3011-7D37A931B3B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>ScriptsAssemblyDefinition</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_27;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GameBrains\Armory\Projectile.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Memory\SensoryMemory.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\SimpleFollow.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Visualization\LineCaster.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Vectors\Vector3Extensions.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\TraverseEdge.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\PathfindingStates\ChooseTarget.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\PathfindingAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\SerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\SimpleMovers\CharacterControllerSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\IndentAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Agent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\ThinkingAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\PathManager.Events.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\Event.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\MathExtensions\Math.Angles.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\Event.T.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\SimpleMovers\SimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\OneCyclePerUpdateSearch\SearchResults.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20QTestAvoidObstacles.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IDictionary.cs" />
+     <Compile Include="Assets\Scripts\Testing\W31TestArbitrationAndEvaluators.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Evade.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Messages\MessageDisplayer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Testing\W23ATestMappedPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\CapsuleCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\OneCyclePerUpdateSearch\Search.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\WindowManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\SearchTypes.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actions\ChangeVelocityAction.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemsRemovedHandler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\IntIntSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\TriggerSoundNotify.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\GoalType.cs" />
+     <Compile Include="Assets\Scripts\C5\WrappedArray.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\MovingAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzyTerm.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Flee.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\SimpleMovers\RigidbodySimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\SteerableAgent.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20DTestArrive.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20MTestDepart.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Log4Net\UnityDataPathAppender.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\MovingAgentPlayerController.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\InputManagement\InputActions.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestRayCastChecker.cs" />
+     <Compile Include="Assets\Scripts\C5\LinkedLists\LinkedList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Map\MapData.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\Orbit.cs" />
+     <Compile Include="Assets\Scripts\C5\Enumerators\MappedCollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\Movers\CharacterControllerMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\FpsViewer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\Explore.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\PauseManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Types\EntityTypes.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestSphereCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\TriggerRespawning.cs" />
+     <Compile Include="Assets\Scripts\C5\Logger.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\OverheadZoomAndPan.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityData\KinematicData.cs" />
+     <Compile Include="Assets\Scripts\C5\Hashing\HashSet.cs" />
+     <Compile Include="Assets\Scripts\Testing\W15MyEventHandler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\AvoidObstacles.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\PathfindingStates\PathfindingStateData.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\SequencedCollectionEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\GraphEditingSupport.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\SimpleMovers\CharacterControllerSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\LinearAndAngularStopImmediately.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\ParameterDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\RayCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\CycleLimitedSearch\CycleLimitedSearch.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\AngularArrive.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\FilePathAtrribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Vectors\VectorXYZ.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Audio\AudioPlayer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\Trigger.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\Features.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\EvaluatorGetWeapon.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\RayCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FzVery.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Align.cs" />
+     <Compile Include="Assets\Scripts\Testing\W23CTestShortestPathTable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\TriggerWeaponGiver.cs" />
+     <Compile Include="Assets\Scripts\Testing\W23BTestPathToLocation.cs" />
+     <Compile Include="Assets\Scripts\Testing\W21TestGraph.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\UnsequencedCollectionEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\PathPlanner.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponRailgun.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\MockMotor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FzAND.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\PointBeacon.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\States\AnotherSampleState.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\IncompatibleViewException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\ProjectileSlug.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\Path.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20NTestPursue.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\ComparerZeroHashCodeEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\ISorted.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20KTestWander.cs" />
+     <Compile Include="Assets\Scripts\Testing\W17TestMovingAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\Movers\RigidbodyMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\InternalComparer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\WeaponsViewer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\ReadOnlyAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\HideInSubClassAttributeDrawer.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\InternalException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Percepts\PositionPercept.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemCountEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Testing\W15TestEntityEventHandling.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityData\StaticData.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedCollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Visualization\BoxCaster.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\EnumerableBase.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\CollectionModifiedException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\AngularSlow.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Pursue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Face.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\VectorLabelsAttribute.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\ComparerFactory.cs" />
+     <Compile Include="Assets\Scripts\C5\Sorting\Sorting.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Timers\Regulator.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\SearchResult.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\Movers\RigidbodyMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20JTestAngularArrive.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20BTestLinearSlow.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedCollection.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Hide.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\Edge.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\OneCyclePerUpdateSearch\AStarSearch.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\IEventHandlingComponent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\TargetingSystem.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\Support\EditorGUILayoutExtension.Support.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\SceneManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\Utilities\PropertyDrawerUtilities.cs" />
+     <Compile Include="Assets\Scripts\Testing\W29TestGoalOrientedBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\CastChecker.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\EqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\Movers\RigidbodyMover.cs" />
+     <Compile Include="Assets\Scripts\C5\LinkedLists\HashedLinkedList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\FadeOutLineOfSight.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IStack.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\StateData.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20FTestAngularSlow.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\ProjectileBolt.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\TransformTranslateMotor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\MonoBehaviourEnabler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\Graph.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemInsertedHandler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\ScriptableObjectPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedList.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\CollectionValueBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\EvaluatorGetHealth.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedIndexedSorted.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\ArriveAtLocation.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\FoldoutAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\State.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\SearchViewer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\CustomEditors\ScriptableObjectEditor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Entity.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20ATestLinearStop.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\MoveToLocation.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ClearedRangeEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20ITestFaceHeading.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\SimpleMovers\TransformTranslateSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W23DTestSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\KeyValuePairEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IShowable.cs" />
+     <Compile Include="Assets\Scripts\Testing\W24TestPathfindingAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Weebles\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\PerformanceMeasures\PerformanceCriteria.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoal.cs" />
+     <Compile Include="Assets\Scripts\C5\Trees\TreeBag.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\ReadOnlyDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\States\SampleGlobalStartState.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\AttackTarget.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\VectorXYZDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\LinearStopImmediately.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DataStructures\Queue\IndexedQueue.Enumerable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\CycleLimitedSearch\SearchResult.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\EvaluatorExplore.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityData\ThinkingData.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\UnlistenableEventException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\IsNullOrEmptyExtensions.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\PathData.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\InternalEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\LinearSlow.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\CountDown.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\SimpleMovers\SimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GameManagement\GameManager.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedDictionary.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\DuplicateNotAllowedException.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\CollectionBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Tools\EditorTools.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\NavigationEditors\PathManagerEditors\PathManagerEditor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\Movers\TransformTranslateMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actions\ChangeAccelerationAction.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\MoverController.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\AngularStop.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\NodeEdgeSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\OneCyclePerUpdateSearch\SearchTypes.cs" />
+     <Compile Include="Assets\Scripts\C5\Arrays\SortedArray.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\ScriptableObjects\SingletonScriptableObject.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IPriorityQueueHandle.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\IntStringSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\VectorLabelsAttributeDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzySetRightShoulder.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\PathfindingStates\FollowPath.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedDirectedCollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\Movers\RigidbodyMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\States\SampleStartState.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IPersistentSorted.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\EdgeCollection.cs" />
+     <Compile Include="Assets\Scripts\Testing\W30TestTriggers.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\MultiPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\PathManager.cs" />
+     <Compile Include="Assets\Scripts\C5\Dictionaries\SortedArrayDictionary.cs" />
+     <Compile Include="Assets\Scripts\Testing\W25TestPathVisualization.cs" />
+     <Compile Include="Assets\Scripts\C5\Arrays\HashedArrayList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\SimpleMoverController.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestBoxCastChecker.cs" />
+     <Compile Include="Assets\Scripts\C5\Showing.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\EventManager.Events.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\TriggerHealthGiver.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\RevealHiddenGameObjects.cs" />
+     <Compile Include="Assets\Scripts\C5\Enumerators\MappedDirectedEnumerable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\Node.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\DirectedCollectionBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\NodeCollection.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\ProjectilePellet.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\NoSuchItemException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\CycleLimitedSearch\Search.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\SimpleMovers\TransformTranslateSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actions\ChangeDirectionAction.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Arrive.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestExtendedMonoBehaviourLogging.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Visualization\CapsuleCaster.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actions\ChangeSpeedAction.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\EventManager.Subscriptions.cs" />
+     <Compile Include="Assets\Scripts\Testing\W27TestFuzzySets.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponEvents.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Enumerations\Enumeration.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\ICollection.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\LineCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Audio\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\EventType.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponType.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\EventManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\FaceHeading.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\VisibleIfAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\ColorAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzyModule.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Minds\Mind.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Percepts\EntityPercept.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\StateMachine.Events.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\EditorGUILayoutExtensions.MaskField.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\Evaluator.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\Support\EditorGUIExtensions.Support.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\SphereCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\PathEdge.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\NotAViewException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\Movers\Mover.cs" />
+     <Compile Include="Assets\Scripts\C5\Enumerators\MultiplicityOne.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\OverheadFollow.cs" />
+     <Compile Include="Assets\Scripts\C5\Dictionaries\SortedDictionaryBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\AdjustRange.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DataStructures\PriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\ScriptableObjects\EnumScriptableObject.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\Events.cs" />
+     <Compile Include="Assets\Scripts\Testing\W15TestEvents.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\ICollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponShotgun.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\Movers\CharacterControllerMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\SphereCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Audio\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\PathfindingStates\Start.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\ProjectileRocket.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\C5\Arrays\CircularQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\AvoidWalls.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IDirectedEnumerable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\EntityTypesPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\C5\Comparers\KeyValuePairComparer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Wander.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\MenuController.cs" />
+     <Compile Include="Assets\Scripts\C5\Enumerators\DropMultiplicity.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\FollowPath.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\EditorGUIExtensions.VectorXYZField.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\DictionaryBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\Goal.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\EntityConsole.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Evaluators\EvaluatorAttackTarget.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemRemovedAtHandler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\GetEntityWithTypes.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\NewOrbit.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DataStructures\Queue\IndexedQueue.Collection.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\BoxCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\Billboard.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\Loader.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Utility.cs" />
+     <Compile Include="Assets\Scripts\C5\C5Random.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GUI\MessageViewer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\Brain.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityData\SteeringData.cs" />
+     <Compile Include="Assets\Scripts\Testing\W11TestStaticData.cs" />
+     <Compile Include="Assets\Scripts\Testing\W18TestSteeringData.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzySetSingleton.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\SamAgent.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\SeekToLocation.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\Heuristics\EuclideanDistance.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\WaitForATime.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\ScriptableObjects\ExtendedScriptableObject.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\SimpleMovers\SimpleMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W32TestWeaponsAndProjectiles.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\Movers\TransformTranslateMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IIndexed.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\Controller.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestLineCastChecker.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\FixedSizeCollectionException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\Movers\CharacterControllerMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\SimpleMovers\SimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\EventBlock.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GameManagement\Respawner.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\Heuristics\Zero.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\CharacterControllerMotor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\StaticDataDrawer.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20OTestEvade.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\AngularStopImmediately.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Memory\SensoryMemoryRecord.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IIndexedSorted.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedDirectedEnumerable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\SteeringOutput.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\DijkstrasSearch.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\Movers\Mover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\ConditionalPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\Movers\TransformTranslateMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestCapsuleCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Depart.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\CustomEditors\MonoBehaviourEditor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Transforms\TransformExtensions.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\Movers\TransformTranslateMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\RigidbodyMotor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Sensors\PositionSensor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FzOR.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\Motor.cs" />
+     <Compile Include="Assets\Scripts\C5\Enumerators\MappedDirectedCollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Interpose.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\NotComparableException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Vectors\VectorXZ.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Log4Net\LoggingConfiguration.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Types\EntityType.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20GTestAlign.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\EditorGUIExtensions.VectorXZField.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemAtEventArgs.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\BestPathTable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\Movers\CharacterControllerMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W08TestChangeSpeedAction.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20ETestAngularStop.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzyRule.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponBlaster.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Visualization\RayCaster.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\SimpleMovers\CharacterControllerSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FzFairly.cs" />
+     <Compile Include="Assets\Scripts\C5\Enums\EventType.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\PointMarker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FzSet.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\VectorXZDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\SimpleMoverPlayerController.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\MonoBehaviours\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IExtensible.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\EdgeBeacon.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\SteeringBehaviour.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\CollectionClearedHandler.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IDirectedCollectionValue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\WanderIndefinitely.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\AStarSearch.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\ISequenced.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\SimpleMovers\CharacterControllerSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\ISortedDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\PathFollower.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\SpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\Controllers\MoverPlayerController.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\InvalidPriorityQueueHandleException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\LinearStop.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedEnumerable.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestCapsuleCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Actuator.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\SimpleMovers\CharacterControllerSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ClearedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20RTestAvoidWalls.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Sensors\Sensor.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20HTestFace.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\FiniteStateMachine\StateManager.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\Heuristics\HeuristicDelegate.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedSequenced.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\ViewDisposedException.cs" />
+     <Compile Include="Assets\Scripts\Testing\W28TestGoalOrientedBehaviours.cs" />
+     <Compile Include="Assets\Scripts\C5\Enums\Speed.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\EditorGUILayoutExtensions.VectorXZField.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\ArrayBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\GameObjects\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\SelectableCamera.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DataStructures\Queue\IndexedQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzySetLeftShoulder.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\CycleLimitedSearch\SearchTypes.cs" />
+     <Compile Include="Assets\Scripts\C5\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponSystem.cs" />
+     <Compile Include="Assets\Scripts\C5\Hashing\HashBag.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\Movers\Mover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\CastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\PathManagement\EdgeTraverser.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20LTestFlee.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Motors\Controllers\MotorController.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedEnumerator.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\DestroyOnContact.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Log4Net\UnityDebugAppender.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Messages\MessageQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\LoadProgress.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\EntityData\PathfindingData.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\PerformanceMeasures\PerformanceMeasure.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ProxyEventBlock.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\SimpleMovers\TransformTranslateSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\PropertyDrawers\TransformWrapperDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\IntFloatSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Steering\VelocityBased\Seek.cs" />
+     <Compile Include="Assets\Scripts\C5\Hashing\HashDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\HuntTarget.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\SimpleMovers\RigidbodySimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Enums\EnumerationDirection.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Cameras\TargetedCamera.cs" />
+     <Compile Include="Assets\Scripts\C5\Trees\TreeDictionary.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestLineCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actions\Action.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\SimpleMovers\TransformTranslateSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\Weapon.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Editor\Extensions\EditorGUILayoutExtensions.VectorXYZField.cs" />
+     <Compile Include="Assets\Scripts\C5\Enums\MutualViewPosition.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzySetTriangle.cs" />
+     <Compile Include="Assets\Scripts\C5\Debug.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\Event.Lifespans.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\LeastCostPathTable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Percepts\Percept.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\SceneManagement\LoaderCallback.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\EventDelegate.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector3\Movers\Mover.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedSortedDictionary.cs" />
+     <Compile Include="Assets\Scripts\C5\Arrays\ArrayList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\SimpleMovers\TransformTranslateSimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\ConditionalPropertyAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\SimpleMovers\SimpleMover.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestSphereCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\Movers\Mover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVectorXZ\SimpleMovers\RigidbodySimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\DirectedCollectionValueBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GameManagement\Parameters.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\AtomicGoals\Strafe.cs" />
+     <Compile Include="Assets\Scripts\C5\Wrappers\GuardedSorted.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Audio\SoundsPlayer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\LineCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Transforms\TransformWrapper.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20CTestSeek.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Entities\Triggers\TriggerTimeLimited.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DataStructures\MappedPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20TTestHide.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IQueue.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Minds\SeekerMind.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzySet.cs" />
+     <Compile Include="Assets\Scripts\C5\Heaps\IntervalHeap.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\MonoBehaviours\ExtendedMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\EventSystem\Event.Lifespan.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestRayCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\GetEntityOfType.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20STestHidingSpot.cs" />
+     <Compile Include="Assets\Scripts\C5\WeakViewList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\SimpleMovers\RigidbodySimpleMover.cs" />
+     <Compile Include="Assets\Scripts\C5\Trees\TreeSet.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingTransformWrapper\SimpleMovers\RigidbodySimpleMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\HideInSubClassAttribute.cs" />
+     <Compile Include="Assets\Scripts\C5\Exceptions\ReadOnlyCollectionException.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\Movers\TransformTranslateMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\OneCyclePerUpdateSearch\DijkstrasSearch.cs" />
+     <Compile Include="Assets\Scripts\C5\BaseClasses\SequencedBase.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Fuzzy\FuzzyVariable.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\MathExtensions\Math.Vectors.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchAlgorithms\SingleUpdateSearch\Search.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingVector2\Movers\CharacterControllerMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Armory\WeaponRocketLauncher.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\GameManagement\InGameMenuController.cs" />
+     <Compile Include="Assets\Scripts\Testing\W12TestKinematicData.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\HidePropertiesInInspectorAttribute.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\CollectionChangedHandler.cs" />
+     <Compile Include="Assets\Scripts\Testing\W22TestSearch.cs" />
+     <Compile Include="Assets\Scripts\Testing\W10TestDisplayMessage.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Utilities\HidingSpotsLocator.cs" />
+     <Compile Include="Assets\Scripts\Testing\W19TestSteerableAgent.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestCastChecker.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\MultiPropertyAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\CapsuleCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Movers\UsingControlledTransformWrapper\Movers\RigidbodyMover.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Lists\ListExtensions.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Sensors\EntitySensor.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\Attributes\ReadOnlyInPlaymodeAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DebuggingTools\Visualization\SphereCaster.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Actuators\Motion\Navigation\SearchGraph\ScoredNode.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Visualization\BoxCastChecker.cs" />
+     <Compile Include="Assets\Scripts\C5\Interfaces\IList.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Memory\MemoryMapSerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\ObjectExtensions.cs" />
+     <Compile Include="Assets\Scripts\Testing\W20PTestInterpose.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\Extensions\DictionaryExtensions\QueueExtensions.cs" />
+     <Compile Include="Assets\Scripts\Testing\W06TestBoxCastVisualizer.cs" />
+     <Compile Include="Assets\Scripts\C5\Events\ItemsAddedHandler.cs" />
+     <Compile Include="Assets\Scripts\GameBrains\DecisionSystems\GoalOrientedBehaviour\Goals\CompositeGoals\MoveToWall.cs" />
+     <None Include="Assets\Scripts\ScriptsAssemblyDefinition.asmdef" />
+ <Reference Include="UnityEngine">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubsystemsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsNativeModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityCurlModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VirtualTexturingModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.CoreModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GraphViewModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PackageManagerUIModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SceneTemplateModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsSamplesModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIServiceModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UnityConnectModule">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>E:/STUDY/477/Project/Assets/Pluggins/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CSharp">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Annotations">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http.Rtc">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.ILGeneration">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.Lightweight">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Duplex">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Http">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.NetTcp">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Primitives">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Security">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>E:/for game design/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InputSystem">
+ <HintPath>E:/STUDY/477/Project/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>E:/STUDY/477/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>E:/STUDY/477/Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/STUDY/477/Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
